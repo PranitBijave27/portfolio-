@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="topFace" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="leftFace" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="rightFace" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0066ff" stop-opacity="0.4" />
+    </linearGradient>
+    <filter id="coreGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="2.5" y="2.5" width="59" height="59" rx="16" fill="url(#bg)" stroke="url(#border)" stroke-width="1.75" />
+
+  <polygon points="32,11 50.18,21.5 32,32 13.82,21.5" fill="url(#topFace)" />
+  <polygon points="13.82,21.5 32,32 32,53 13.82,42.5" fill="url(#leftFace)" />
+  <polygon points="32,32 50.18,21.5 50.18,42.5 32,53" fill="url(#rightFace)" />
+
+  <polyline points="13.82,21.5 32,11 50.18,21.5 50.18,42.5 32,53 13.82,42.5 13.82,21.5" fill="none" stroke="#e0f2fe" stroke-width="1.5" stroke-linejoin="round" />
+  <line x1="32" y1="32" x2="13.82" y2="21.5" stroke="#bae6fd" stroke-width="1.5" />
+  <line x1="32" y1="32" x2="50.18" y2="21.5" stroke="#7dd3fc" stroke-width="1.5" />
+  <line x1="32" y1="32" x2="32" y2="53" stroke="#60a5fa" stroke-width="1.5" />
+
+  <circle cx="32" cy="32" r="3.5" fill="#ffffff" filter="url(#coreGlow)" />
+  <circle cx="32" cy="32" r="2" fill="#38bdf8" />
+
+  <circle cx="32" cy="11" r="1.5" fill="#e0f2fe" />
+  <circle cx="50.18" cy="21.5" r="1.5" fill="#e0f2fe" />
+  <circle cx="50.18" cy="42.5" r="1.5" fill="#7dd3fc" />
+  <circle cx="32" cy="53" r="1.5" fill="#60a5fa" />
+  <circle cx="13.82" cy="42.5" r="1.5" fill="#7dd3fc" />
+  <circle cx="13.82" cy="21.5" r="1.5" fill="#e0f2fe" />
+</svg>
